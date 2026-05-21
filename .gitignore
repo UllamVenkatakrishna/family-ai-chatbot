@@ -1,0 +1,4 @@
+venv/
+.env
+family_memory.db
+__pycache__/
