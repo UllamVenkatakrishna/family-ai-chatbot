@@ -9,7 +9,7 @@ from weather_service import get_weather
 load_dotenv()
 
 st.set_page_config(
-    page_title="FamilyBuddy AI",
+    page_title="Ullam Chat Bot",
     page_icon="👨‍👩‍👧‍👦",
     layout="wide"
 )
@@ -89,7 +89,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    st.markdown("## 👨‍👩‍👧‍👦 FamilyBuddy AI")
+    st.markdown("## Ullam Chat Bot")
     st.markdown("""
     <div class="sidebar-box">
     <b>Features</b><br>
@@ -113,11 +113,36 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-title">👨‍👩‍👧‍👦 FamilyBuddy AI</div>', unsafe_allow_html=True)
-st.markdown(
-    '<div class="sub-title">Your family chat, cooking, memory, weather, and movie assistant</div>',
-    unsafe_allow_html=True
-)
+st.markdown("""
+<div style='text-align:center; margin-top:80px;'>
+
+<h1 style='
+font-size:58px;
+font-weight:700;
+color:#111827;
+margin-bottom:20px;
+'>
+Ullam Chat Bot
+</h1>
+
+<h2 style='
+font-size:40px;
+font-weight:500;
+color:#374151;
+'>
+What's on your mind today?
+</h2>
+
+<p style='
+font-size:18px;
+color:#6b7280;
+margin-top:15px;
+'>
+Ask about weather 🌤️ • movies 🎬 • cooking 🍳 • family 💬 • anything ✨
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 llm = ChatOpenAI(
     model="gpt-4o-mini",
